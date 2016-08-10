@@ -45,7 +45,7 @@ teamDict = {
 
 goalie_table_sql = (
         "CREATE TABLE `Goalies`" 
-        "(`Goalie_Number`              int             NOT NULL,"
+        "(`Goalie_Number`              int             NULL,"
         "`Goalie_Name`                 varchar(50)     NOT NULL,"
         "`Team`                        varchar(50)     NOT NULL,"
         "`Games_Played_In`             int             NOT NULL,"
@@ -67,7 +67,7 @@ goalie_table_sql = (
         )
 skater_table_sql = (
     "CREATE TABLE %s"
-    "(`Skater_Number`              int             NOT NULL,"
+    "(`Skater_Number`              int             NULL,"
     "`Position`                    varchar(10)     NOT NULL,"
     "`Skater_Name`                 varchar(60)     NOT NULL,"
     "`Games_Played`                int             NOT NULL,"
@@ -96,7 +96,8 @@ with open('data.json', 'r') as data:
  
 special_url = ['http://predators.nhl.com/club/stats.htm?gameType=2&season=20152016']
 
-r = ['http://rangers.nhl.com/club/stats.htm?gameType=2&season=20152016&srt=pnum']#'rangers':'http://rangers.nhl.com/club/stats.htm?gameType=2&season=20152016'} #first one is sorted by number
+r = ['http://rangers.nhl.com/club/stats.htm?gameType=2&season=20152016&srt=pnum']
+#first one is sorted by number
 
 urls_skater0_goalie1 = ['http://senators.nhl.com/club/stats.htm',
 'http://blackhawks.nhl.com/club/stats.htm?gameType=2&season=20152016 ','http://hurricanes.nhl.com/club/stats.htm', 'http://ducks.nhl.com/club/stats.htm?gameType=2&season=20152016', 'http://mapleleafs.nhl.com/club/stats.htm', 'http://avalanche.nhl.com/club/stats.htm', 'http://canadiens.nhl.com/club/stats.htm?gameType=3&season=20152016', 'http://bruins.nhl.com/club/stats.htm', 'http://sharks.nhl.com/club/stats.htm?gameType=2&season=20152016','http://sabres.nhl.com/club/stats.htm','http://coyotes.nhl.com/club/stats.htm', 'http://flames.nhl.com/club/stats.htm','http://stars.nhl.com/club/stats.htm?gameType=2&season=20152016', 'http://wild.nhl.com/club/stats.htm?gameType=2&season=20152016','http://canucks.nhl.com/club/stats.htm','http://penguins.nhl.com/club/stats.htm?gameType=2&season=20152016', 'http://lightning.nhl.com/club/stats.htm?gameType=2&season=20152016','http://capitals.nhl.com/club/stats.htm?gameType=2&season=20152016','http://flyers.nhl.com/club/stats.htm?gameType=2&season=20152016']
