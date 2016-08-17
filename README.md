@@ -12,6 +12,7 @@ Scheduled Updates:
   2. Send a notification each time the script runs
   3. Auto run script daily (Using Windows Task Scheduler and Batch Script)
   4. Account for players who do not currently have a number - as of now, their stats must be manually entered
+  5. Auto rename tables to team name and year
   
 Feel free to contact me with suggestions/ideas at jamesstein8@gmail.com - please leave your first name so I can address you properly
   
